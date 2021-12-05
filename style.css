@@ -1,0 +1,34 @@
+* {
+  /* box-sizing: border-box; */
+  /* margin: 20px; */
+  /* padding: 20px; */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+#chessboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  height: 640px;
+  border: 1px solid black;
+  background-color: #fff;
+  border: 2px solid red;
+}
+.square:nth-of-type(2n) {
+  background-color: #000;
+}
+.squares:nth-of-type(2n + 1) {
+  background-color: #000;
+}
+.square,
+.squares {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
